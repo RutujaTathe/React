@@ -1,0 +1,27 @@
+{
+  "name": "managepackage",
+  "version": "1.0.0",
+  "description": "this is react ",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RutujaTathe/React.git"
+  },
+  "keywords": [],
+  "author": "Rutuja Tathe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RutujaTathe/React/issues"
+  },
+  "homepage": "https://github.com/RutujaTathe/React#readme",
+  "dependencies": {
+    "parcel": "^2.14.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist": [
+    "last 2 version"
+  ]
+}
