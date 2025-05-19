@@ -1,4 +1,4 @@
-#heading {
+/* #heading {
   color: red;
 }
 #child {
@@ -9,4 +9,66 @@
 }
 h2 {
   color: green;
+} */
+.body {
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  height: 80px;
+}
+.logo {
+  width: 90px;
+  height: 70px;
+}
+.nav-items {
+  padding: 0px 20px;
+}
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-items > ul > li {
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+}
+.res-card {
+  margin-top: 20px;
+  padding: 5px;
+  width: 200px;
+  height: 350px;
+  border: 1px solid none;
+}
+.res-card:hover {
+  border: 1px solid rgb(92, 91, 91);
+  cursor: pointer;
+}
+.search {
+  margin-left: 600px;
+}
+.res-logo {
+  width: 100%;
+}
+.rating {
+  background-color: green;
+  color: white;
+}
+.causian {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  font-size: 10px;
+  margin-left: 0px;
+  gap: 10px;
+}
+.res-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
