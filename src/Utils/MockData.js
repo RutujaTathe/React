@@ -1,47 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-/**
- * Header
- * Logo
- * Nav items
- * Body
- * -Search
- * -Restaurant container
- * RestaurantCard
- * -img
- * -name of res,star rating,cuisine,deliveryTime, etc
- * Footer
- * -copyright
- * -links
- * -address
- * -contact
- */
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          src="https://www.shutterstock.com/image-vector/burger-food-logo-icon-vector-600w-1493310305.jpg"
-        />
-      </div>
-      <div className="search">
-        <input type="text" placeholder="Serach items"></input>
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-const styleCard = {
-  backgroundColor: "#f0f0f0",
-};
 const resObj = [
   {
     id: "1",
@@ -130,51 +86,53 @@ const resObj = [
     resImage:
       "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/f70d8f6f489f280b143f5baa0d46adb6",
   },
+  {
+    id: "9",
+
+    resName: "Malabar",
+    cuisian:
+      "You Will Love Relishing This Delicious And Spicy Egg Bhurji Scrambled With Eggs [Serves 1-2].",
+    ratings: "❇️ 3.1",
+    minutes: "90 mins",
+    price: "₹900 FOR TWO",
+    resImage:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2024/6/20/ee609d68-3867-415e-8ae7-67055d72c59a_05d3c893-6146-45da-8be8-eb5af9ec08c7.JPG",
+  },
+  {
+    id: "10",
+
+    resName: "Marrakesh",
+    cuisian: "Garlic Hummus with olive and Pita Bread",
+    ratings: "❇️ 3.9",
+    minutes: "120 mins",
+    price: "₹1000 FOR TWO",
+    resImage:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/c71bc8d155048597c85f81bc044b5194",
+  },
+  {
+    id: "11",
+
+    resName: "Faasos - Wraps, Rolls & Shawarma",
+    cuisian:
+      "Crunchy is this wrap's middle name! Crispy, juicy, & tender chicken strips",
+    ratings: "❇️ 4.2",
+    minutes: "120 mins",
+    price: "₹2000 FOR TWO",
+    resImage:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2025/4/23/1b007ae6-5fee-4b13-b0ad-3ee1aa6fcc09_95feb98d-f11b-4369-95f4-7b92b6a17159.jpeg",
+  },
+  {
+    id: "12",
+
+    resName: "LunchBox - Meals and Thalis",
+    cuisian:
+      "Finely minced Chicken Kheema is slow-cooked to perfection with a lot of care and the perfect blend of spices",
+    ratings: "❇️ 4.9",
+    minutes: "20 mins",
+    price: "₹200 FOR TWO",
+    resImage:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/4/23/733de141-0876-49df-855d-e0eab790577f_01a65dbf-7b77-42d6-8567-d5ebb5625074.jpeg",
+  },
 ];
-const RestaurantCard = (props) => {
-  const { resData } = props;
-  return (
-    <div className="res-card" style={styleCard}>
-      <img className="res-logo" alt="res-logo" src={resData.resImage} />
-      <h3>{resData.resName}</h3>
-      <h5>
-        {Array.isArray(resData.cuisian)
-          ? resData.cuisian.join(", ")
-          : resData.cuisian}
-      </h5>
-      <div className="causian">
-        <ul className="causian">
-          <li className="rating" style={{ height: "15px", width: "35px" }}>
-            {resData.ratings}
-          </li>
-          <li>{resData.minutes}</li>
-          <li>{resData.price}</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="res-container">
-        {resObj.map((restaurant) => (
-          <RestaurantCard key={restaurant.id} resData={restaurant} />
-        ))}
-      </div>
-    </div>
-  );
-};
 
-const APPLayout = () => {
-  return (
-    <div className="app">
-      {/*Header */}
-      <Header />
-      <Body />
-    </div>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<APPLayout />);
+export default resObj;

@@ -19,3 +19,38 @@
 - HTTPs
 - Tree Shaking -remove unused code
 - Different dev and prod bundles
+
+# food ordering app:
+
+/\*\*
+
+- Header
+- Logo
+- Nav items
+- Body
+- -Search
+- -Restaurant container
+- RestaurantCard
+- -img
+- -name of res,star rating,cuisine,deliveryTime, etc
+- Footer
+- -copyright
+- -links
+- -address
+- -contact
+  \*/
+
+- Default Export/Import( single import)
+
+export default component;
+import component from "path";
+
+- Named export/Import( multiple import)
+  export const Component
+  import {component} form "path";
+
+# React Hook
+
+- ( Normal Js utility function) develop by facebook developer
+- useState() -superpowerful state variable in react
+- useEffect()
