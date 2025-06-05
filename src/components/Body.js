@@ -1,11 +1,7 @@
-import resObj from "../Utils/MockData";
 import RestaurantCard from "./RestaurantCard";
 import React, { useState } from "react";
-
-let resObj = resObj;
-// local state variable- super powerful variable
-
-// const [listOfRestaurant] = useState();
+import resList from "../Utils/MockData";
+let resObj = resList;
 
 const Body = () => {
   const [listOfRestaurant, setListOfRestaurant] = useState(resObj);
